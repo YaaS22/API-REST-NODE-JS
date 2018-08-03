@@ -42,7 +42,7 @@ app.all('/*', function(req, res, next) {
  }
 });
 
-//etape 9 et 1
+
 app.get('/api/recipes.json', function(req, res) {
  var user_id = req.param('user')
  console.log(req.param('user'));
@@ -366,7 +366,7 @@ app.put('/api/users/:username/recipes/:slug.json', function(req, res) {
 });
 
 
-//etape 7 DELETE
+
 app.delete('/api/users/:username/recipes/:slug.json', function(req, res) {
  //var token = jwt.sign({username: 'etna'}, mySecret);
  var username = req.params.username;
